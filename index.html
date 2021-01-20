@@ -13,19 +13,21 @@
 <body>
     <header>
         <section>
-
             <div>
                 <img src="assets/img/logo.svg" alt="logo">
                 <h2>TheDesignProject</h2>
             </div>
             <p>TheDesignProject by a WebDesigner</p>
             <h1>How to become a<br> better designer?</h1>
-            <p>A challenge to improve your product design skills by solving<br> problems in your daily life.<span><img
-                        src="assets/img/rocket.png" alt="rocket" /></span></p>
+            <p>A challenge to improve your product design skills by solving<br> problems in your daily life.
+                <span><img src="assets/img/rocket.png" alt="rocket" /></span>
+            </p>
             <a href="#">SCROLL TO SEE MORE</a>
         </section>
     </header>
+
     <main>
+        <!--collage center section1-->
         <section>
             <img src="assets/img/images.jpg" alt="image" />
         </section>
@@ -47,27 +49,31 @@
             <h1>After several weeks of<br>sticking to this challenge, I<br> learned a lot</h1>
         </section>
 
-        <!--section 4-->
+        <!--section 4 gelb grün-->
         <section>
-            <h1><span><img src="assets/img/title02.svg" alt="gelb"></span>Start with asking why</h1>
-            <p>You will start seeing things differently and coming<br>
-                up with more effective ways of achieving goals.</p>
+            <div>
+                <h1><span><img src="assets/img/title02.svg" alt="gelb"></span>Start with asking why</h1>
+                <p>You will start seeing things differently and coming<br>
+                    up with more effective ways of achieving goals.</p>
+            </div>
 
-            <h2><span><img src="assets/img/title01.svg" alt="lila"></span>Design solutions with Love </h2>
-            <p>Only when you experience a problem yourself do<br>you understand the frustration of the users and<br>
-                resolve to end it.</p>
-        </section>
-
-        <!--section 5-->
-        <section>
-            <div class="greenred">
-                <h2><span><img src="assets/img/title04.svg" alt="grün"></span>Your ideas will have more value</h2>
+            <div>
+                <h1><span><img src="assets/img/title04.svg" alt="grün"></span>Your ideas will have more value</h1>
                 <p>By looking at problems from a different<br>perspective, your ideas will be fresher and
                     more<br>valuable.
                 </p>
+            </div>
+        </section>
 
+        <!--section 5 lila rot-->
+        <section>
+            <div>
+                <h2><span><img src="assets/img/title01.svg" alt="lila"></span>Design solutions with Love </h2>
+                <p>Only when you experience a problem yourself do<br>you understand the frustration of the users and<br>
+                    resolve to end it.</p>
+            </div>
 
-
+            <div>
                 <h2><span><img src="assets/img/title03.svg" alt="rot"></span>Share and show your work</h2>
                 <p>As designers, we are often afraid of showing work<br>that’s not finished or doesn’t look perfect. You
                     will<br>
@@ -129,15 +135,25 @@
                 <br> people have to say about it.
             </p>
         </section>
-
-
-
-
-
-
-
-
     </main>
+
+    <!-------------footer------------------>
+    <footer>
+        <section>
+            <h1>Do you like this challenge?</h1>
+            <p>Subscribe to be the first to hear about updates, tips and recommendations!</p>
+        </section>
+
+        <section class="subscribe">
+            <form action="">
+                <input type="email" name="email" id="emaiHTML" placeholder="Write your email here"><br>
+                <input type="button" value="Subscribe" onclick="subscribeConfirmation()">
+            </form>
+            <section>
+                <p>Created with Love by a Webdesigner<span><img src="assets/img/love.png" alt="heart"></span>
+                </p>
+    </footer>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

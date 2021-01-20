@@ -44,16 +44,17 @@ header p:nth-of-type(1){
 }
 
 header h1{
-    padding: 250px 0 20px 80px;
-    font-size: 4em;
+    padding: 300px 0 20px 80px;
+    font-size: 3.5em;
     margin: 0;
 }
 
 header p:nth-of-type(2){
     margin: 0;
-    padding-left: 70px;
+    padding-left: 6%;
     font-family:'roboto' sans-serif;
     font-size: 20px;
+    line-height: 0px;
 }
 
 header a{
@@ -62,6 +63,7 @@ header a{
         padding-top: 150px;
         color: #ff3571 ;
 }
+
 
 /*______________________main_____________________*/
 
@@ -94,55 +96,84 @@ main section:nth-of-type(2) p{
     line-height: 30px;
     padding-top: 100px;
     padding-right: 20%;
-    width: 30%;
+    width: 40%;
 }
 
 
 section:nth-of-type(3){
-    font-size: 2em;
+    font-size: 2.5em;
     padding-left: 7%;
     padding-top: 80px;
     font-weight: bold;
 }
 
 
+/*---------------Section Icon Gelb Grün-----------*/
 
-section:nth-of-type(4) img{
-    width: 2%;
-    padding-left: 5%;
-    padding-right: 1%;
+section:nth-of-type(4){                         /*gelb*/
+    display:flex;
+    justify-content: start;
+    padding-left: 8%;
+ 
+}
+section:nth-of-type(4) div:nth-of-type(1){     /*grün*/
+    padding-right: 15%;
+
 }
 
 
 section:nth-of-type(4) p{
+    padding-left: 15%;   
+    line-height: 40px; 
+}
+
+
+section:nth-of-type(4) img{
+    width:10%;
+    align-self: flex-start;
+    padding-right: 5%;
+}
+
+section:nth-of-type(4) div{
+    width:35%;
+    
+}
+
+
+
+
+/*---------------Section Icon rot lila-----------*/
+
+section:nth-of-type(5){                         /*lila*/
+    display:flex;
+    justify-content: start;
     padding-left: 8%;
-    line-height: 30px;
+ 
 }
+section:nth-of-type(5) div:nth-of-type(1){     /*rot*/
+    padding-right: 15%;
 
-
-.greenred{                               /* -----div greenred Nach oben Bewegen?-----*/
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-
-
-
-}
-
-
-section:nth-of-type(5) img{
-    width: 2%;
-    padding-left: 5%;
-    padding-right: 1%;
 }
 
 
 section:nth-of-type(5) p{
-    padding-left: 8%;
-    line-height: 30px;
+    padding-left: 15%;   
+    line-height: 40px; 
 }
 
 
+section:nth-of-type(5) img{
+    width:10%;
+    align-self: flex-start;
+    padding-right: 5%;
+}
+
+section:nth-of-type(5) div{
+    width:35%;
+    
+}
+
+/*------------------------Text are you ready----------------------------------------*/
 
 section:nth-of-type(6){
     text-align: center;
@@ -160,8 +191,10 @@ section:nth-of-type(6) p{
     padding-bottom: 150px;
 }
 
+/*-------------------------Steps sections---------------------------------------*/
 
 /* section-7 */                                 /*section Bild Links*/
+
 section:nth-child(7){
     background: url(../img/step01.png) left/contain no-repeat;
     display: flex;
@@ -191,6 +224,7 @@ section:nth-child(7) p{
     font-size: 1em;
     padding-right: 6%;
     line-height: 30px;
+    margin-bottom: 100px;
     
 }  
 
@@ -226,6 +260,7 @@ section:nth-child(8) p{
     font-size: 1em;
     padding-left: 3%;
     line-height: 30px;
+    margin-bottom: 100px;;
 }   
 
 
@@ -246,7 +281,7 @@ section:nth-child(9) h1{
 section:nth-child(9) img:nth-of-type(1){
     width: 4%;
     padding-top: 0px;
-    padding-right: 40%;
+    padding-right: 42%;
 }
 
 section:nth-child(9) h2{
@@ -258,6 +293,7 @@ section:nth-child(9) p{
     font-size: 1em;
     padding-right: 6%;
     line-height: 30px;
+    margin-bottom: 100px;
 } 
 
 
@@ -292,4 +328,53 @@ section:nth-child(10) p{
     font-size: 1em;
     padding-left: 3%;
     line-height: 30px;
-}   
+}
+
+
+/*----------footer----------------*/
+
+footer{
+    text-align:center;
+}
+
+footer h1{
+    padding-top: 100px;
+    font-size: 4em;
+}
+
+footer p{
+    font-size: 1.5em;
+}
+
+input[type="email"]{
+    text-align: center;
+    border: 0.5px solid #dddddd;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    width: 50%;
+    padding: 20px;
+}
+
+input[type="button"]{
+    text-align: center;
+    background-color: #ff3571;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Roboto';
+    border-radius: 5px;
+    border: none;
+    padding: 20px;
+    margin-bottom: 100px;
+    width: 15%;
+}
+
+footer :last-child p{
+    text-align: left;
+    font-size: 1.5em;
+    padding-left: 5%;
+}
+
+input:hover{
+    background: linear-gradient(to right, #ff3571, #3C30FF);
+    border: #ff3571 solid 1px;
+}
